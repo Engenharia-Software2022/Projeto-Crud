@@ -13,7 +13,7 @@ namespace ProjetoDS.dao
 
         public ClienteDAO()
         {
-           this.conexao = ConnectionFactory.getConnection();
+            this.conexao = ConnectionFactory.getConnection();
         }
 
         //metodos sql
@@ -22,7 +22,7 @@ namespace ProjetoDS.dao
             try
             {
                 string sql = @"insert into cliente (nome, email, senha, sexo) values (@nome,@email,@senha,@sexo)";
-                
+
 
                 //2 passo - organizar o sql
                 MySqlCommand cmd = new MySqlCommand(sql, conexao);
@@ -45,8 +45,6 @@ namespace ProjetoDS.dao
 
                 MessageBox.Show("Aconteceu o erro: " + erro);
             }
-
-
         }
 
 
@@ -56,22 +54,26 @@ namespace ProjetoDS.dao
             try
             {
                 string sql = @"update cliente set nome = @nome, email=@email, senha=@senha, sexo=@sexo where id_cliente = @id";
-                               
+
 
                 //2 passo - organizar o sql
                 MySqlCommand cmd = new MySqlCommand(sql, conexao);
-              
+
                 cmd.Parameters.AddWithValue("@nome", obj.nome);
                 cmd.Parameters.AddWithValue("@email", obj.email);
                 cmd.Parameters.AddWithValue("@senha", obj.senha);
                 cmd.Parameters.AddWithValue("@sexo", obj.sexo);
-               
+
                 cmd.Parameters.AddWithValue("@id", obj.id);
 
+                conexao.Open();
 
-               cmd.ExecuteNonQuery();
+                cmd.ExecuteNonQuery();
+
                 //4 passo - fechar a conexao
                 conexao.Close();
+
+                MessageBox.Show("Cliente alterado com sucesso!");
             }
             catch (Exception erro)
             {
@@ -87,17 +89,21 @@ namespace ProjetoDS.dao
         {
             try
             {
-                string sql = @"delete from cliente where id_cliente = @codigo";
+                string sql = @"delete from cliente where id_cliente = @id";
 
                 //2 passo - organizar o sql
                 MySqlCommand cmd = new MySqlCommand(sql, conexao);
                 cmd.Parameters.AddWithValue("@id", obj.id);
-            
+
+                conexao.Open();
 
 
-               cmd.ExecuteNonQuery();
+
+                cmd.ExecuteNonQuery();
                 //4 passo - fechar a conexao
                 conexao.Close();
+
+                MessageBox.Show("Cliente excluído com sucesso!");
             }
             catch (Exception erro)
             {
@@ -113,30 +119,30 @@ namespace ProjetoDS.dao
 
         public DataTable ListarTodosClientes()
         {
-        
-                //1 passo - comando sql
-                string sql = @"select * from cliente";
 
-                //2 passo - organizar o sql
-                MySqlCommand cmd = new MySqlCommand(sql, conexao);
-                conexao.Open();
-               
-                //3 passo - abcmdrir a conexao e executar o comando                
-                cmd.ExecuteNonQuery();
+            //1 passo - comando sql
+            string sql = @"select * from cliente";
 
-                //4 passo - criar o MySQLDataAdapter
-                
-               MySqlDataAdapter da = new MySqlDataAdapter(cmd);
-                //5 passo - criar o DataTable
-               
-                DataTable tabelaCliente = new DataTable();
-                da.Fill(tabelaCliente);
-              
-               //fechar conexão
-                conexao.Close();
+            //2 passo - organizar o sql
+            MySqlCommand cmd = new MySqlCommand(sql, conexao);
 
-                //Retornar o DataTable com os dados
-                return tabelaCliente;            
+            //3 passo - abcmdrir a conexao e executar o comando                
+            conexao.Open();
+            cmd.ExecuteNonQuery();
+
+            //4 passo - criar o MySQLDataAdapter
+            DataTable tabelaCliente = new DataTable();
+
+            //5 passo - criar o DataTable
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+
+            da.Fill(tabelaCliente);
+
+            //fechar conexão
+            conexao.Close();
+
+            //Retornar o DataTable com os dados
+            return tabelaCliente;
 
         }
     }
