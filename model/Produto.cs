@@ -1,15 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 
 namespace ProjetoDS.model
 {
     public class Produto
     {
+        public int id_produto { get; set; }
         public string descricao { get; set; }
-        public string quantidade { get; set; }
+        public int quantidade { get; set; }
+
+        //Chave estrangeira da tabela de fornecedor
+        public int fk_fornecedor { get; set; }
 
     }
 }

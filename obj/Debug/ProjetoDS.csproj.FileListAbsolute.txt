@@ -58,3 +58,4 @@ C:\Users\Marcos\Desktop\Projeto\ProjetoDS\bin\Debug\System.Buffers.xml
 C:\Users\Marcos\Desktop\Projeto\ProjetoDS\bin\Debug\System.Memory.xml
 C:\Users\Marcos\Desktop\Projeto\ProjetoDS\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\Marcos\Desktop\Projeto\ProjetoDS\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Marcos\Desktop\Projeto\ProjetoDS\obj\Debug\ProjetoDS.view.frmFornecedor.resources

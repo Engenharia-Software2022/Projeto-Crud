@@ -59,7 +59,6 @@
             this.cbSexo.Location = new System.Drawing.Point(62, 311);
             this.cbSexo.Name = "cbSexo";
             this.cbSexo.Size = new System.Drawing.Size(69, 36);
-            this.cbSexo.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.cbSexo.TabIndex = 15;
             // 
             // txbId
@@ -80,7 +79,6 @@
             this.txbId.ReadOnly = true;
             this.txbId.SelectedText = "";
             this.txbId.Size = new System.Drawing.Size(69, 36);
-            this.txbId.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txbId.TabIndex = 16;
             // 
             // btnCadastrar
@@ -111,7 +109,6 @@
             this.txbSenha.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txbSenha.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txbSenha.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txbSenha.IconLeft = global::ProjetoDS.Properties.Resources.icons8_lock_50__1_;
             this.txbSenha.IconLeftSize = new System.Drawing.Size(30, 30);
             this.txbSenha.Location = new System.Drawing.Point(60, 250);
             this.txbSenha.Name = "txbSenha";
@@ -119,7 +116,6 @@
             this.txbSenha.PlaceholderText = "Senha";
             this.txbSenha.SelectedText = "";
             this.txbSenha.Size = new System.Drawing.Size(200, 36);
-            this.txbSenha.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txbSenha.TabIndex = 14;
             // 
             // txbEmail
@@ -133,7 +129,6 @@
             this.txbEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txbEmail.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txbEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txbEmail.IconLeft = global::ProjetoDS.Properties.Resources.icons8_mensagem_30;
             this.txbEmail.IconLeftSize = new System.Drawing.Size(25, 25);
             this.txbEmail.Location = new System.Drawing.Point(60, 197);
             this.txbEmail.Name = "txbEmail";
@@ -141,7 +136,6 @@
             this.txbEmail.PlaceholderText = "Email";
             this.txbEmail.SelectedText = "";
             this.txbEmail.Size = new System.Drawing.Size(200, 36);
-            this.txbEmail.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txbEmail.TabIndex = 13;
             // 
             // txbNome
@@ -155,7 +149,6 @@
             this.txbNome.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txbNome.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txbNome.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txbNome.IconLeft = global::ProjetoDS.Properties.Resources.icons8_user_50;
             this.txbNome.IconLeftSize = new System.Drawing.Size(35, 35);
             this.txbNome.Location = new System.Drawing.Point(60, 149);
             this.txbNome.Name = "txbNome";
@@ -163,7 +156,6 @@
             this.txbNome.PlaceholderText = "Nome";
             this.txbNome.SelectedText = "";
             this.txbNome.Size = new System.Drawing.Size(200, 36);
-            this.txbNome.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txbNome.TabIndex = 12;
             // 
             // dgvClientes
@@ -183,7 +175,7 @@
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvClientes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.dgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvClientes.ColumnHeadersHeight = 4;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -211,7 +203,7 @@
             this.dgvClientes.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgvClientes.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             this.dgvClientes.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgvClientes.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvClientes.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvClientes.ThemeStyle.HeaderStyle.Height = 4;
             this.dgvClientes.ThemeStyle.ReadOnly = false;
             this.dgvClientes.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
