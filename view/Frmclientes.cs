@@ -102,5 +102,10 @@ namespace ProjetoDS.view
             dao.excluir(obj);
             dgvClientes.DataSource = dao.ListarTodosClientes();
         }
+
+        private void dgvClientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

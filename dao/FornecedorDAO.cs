@@ -70,7 +70,6 @@ namespace ProjetoDS.dao
                 string sql = @"update cliente set nome = @nome, cnpj=@cnpj, endereco=@endereco, bairro=@bairro, cidade=@cidade, 
                                 numero=@numero, telefone=@telefone, email=@email where id_fornecedor = @id";
 
-
                 //2 passo - organizar o sql
                 MySqlCommand cmd = new MySqlCommand(sql, conexao);
 
@@ -99,8 +98,6 @@ namespace ProjetoDS.dao
 
                 MessageBox.Show("Aconteceu o erro: " + erro);
             }
-
-
         }
 
         #endregion
@@ -119,8 +116,6 @@ namespace ProjetoDS.dao
                 cmd.Parameters.AddWithValue("@id_fornecedor", obj.id);
 
                 conexao.Open();
-
-
 
                 cmd.ExecuteNonQuery();
                 //4 passo - fechar a conexao
@@ -154,7 +149,7 @@ namespace ProjetoDS.dao
             //2 passo - organizar o sql
             MySqlCommand cmd = new MySqlCommand(sql, conexao);
 
-            //3 passo - abcmdrir a conexao e executar o comando                
+            //3 passo - abrir a conexao e executar o comando                
             conexao.Open();
             cmd.ExecuteNonQuery();
 

@@ -53,6 +53,10 @@ namespace ProjetoDS.view
 
             ProdutoDAO dao = new ProdutoDAO();
             dao.Cadastrar(obj);
+
+            //Carregar no datagridView
+            dgvProduto.DataSource = dao.ListarTodosProdutos();
+
         }
 
         private void btnAlterar_Click(object sender, EventArgs e)
@@ -69,6 +73,9 @@ namespace ProjetoDS.view
 
             ProdutoDAO dao = new ProdutoDAO();
             dao.alterar(obj);
+
+            //Carregar no datagridView
+            dgvProduto.DataSource = dao.ListarTodosProdutos();
         }
 
         private void btnExcluir_Click(object sender, EventArgs e)
@@ -80,6 +87,9 @@ namespace ProjetoDS.view
 
             ProdutoDAO dao = new ProdutoDAO();
             dao.excluir(obj);
+
+            //Carregar no datagridView
+            dgvProduto.DataSource = dao.ListarTodosProdutos();
         }
 
         #region Método ListarTodosProdutos
@@ -88,5 +98,20 @@ namespace ProjetoDS.view
 
 
         #endregion
+
+        private void cbFornecedor_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+       
+
+        private void dgvProduto_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txbId.Text = dgvProduto.CurrentRow.Cells[0].Value.ToString();
+            txbDescricao.Text = dgvProduto.CurrentRow.Cells[1].Value.ToString();
+            txbQuantidade.Text = dgvProduto.CurrentRow.Cells[2].Value.ToString();
+            cbFornecedor.Text = dgvProduto.CurrentRow.Cells[3].Value.ToString();
+        }
     }
 }

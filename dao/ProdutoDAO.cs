@@ -26,7 +26,7 @@ namespace ProjetoDS.dao
         {
             try
             {
-                string sql = @"insert into produto (descricao, quantidade, fk_forid) values (@decricao, @quantidade, @fk_for_id)";
+                string sql = @"insert into produto (descricao, quantidade, fk_forid) values (@descricao, @quantidade, @fk_for_id)";
 
 
                 //2 passo - organizar o sql
@@ -93,8 +93,6 @@ namespace ProjetoDS.dao
 
 
         }
-
-
         #endregion
 
 
@@ -129,9 +127,6 @@ namespace ProjetoDS.dao
 
 
         }
-
-
-
         #endregion
 
 
@@ -141,7 +136,9 @@ namespace ProjetoDS.dao
         {
 
             //1 passo - comando sql
-            string sql = @"select * from produto";
+            string sql = @"select p.id_produto 'Código', p.descricao 'Descrição', p.quantidade 'Quantidade', f.nome 'Fornecedor'
+                           from produto as p join fornecedor as f
+                            on (p.fk_forid = f.id_fornecedor)";
 
             //2 passo - organizar o sql
             MySqlCommand cmd = new MySqlCommand(sql, conexao);
