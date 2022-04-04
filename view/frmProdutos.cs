@@ -32,6 +32,11 @@ namespace ProjetoDS.view
             cbFornecedor.DisplayMember = "nome";
             cbFornecedor.ValueMember = "id_fornecedor";
 
+            //Carrrega o datagridView
+
+            ProdutoDAO dao_produto = new ProdutoDAO();
+            dgvProduto.DataSource = dao_produto.ListarTodosProdutos();
+
         }
 
         private void btnCadastrar_Click(object sender, EventArgs e)
@@ -42,6 +47,8 @@ namespace ProjetoDS.view
             obj.quantidade = int.Parse(txbQuantidade.Text);
 
             //Pegando a chave estrangeira do combobox fornecedor
+
+            //Erro aqui de referencia de objeto
             obj.fk_fornecedor = int.Parse(cbFornecedor.SelectedValue.ToString());
 
             ProdutoDAO dao = new ProdutoDAO();
@@ -74,5 +81,12 @@ namespace ProjetoDS.view
             ProdutoDAO dao = new ProdutoDAO();
             dao.excluir(obj);
         }
+
+        #region Método ListarTodosProdutos
+
+
+
+
+        #endregion
     }
 }

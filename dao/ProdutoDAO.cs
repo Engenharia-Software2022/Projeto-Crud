@@ -26,7 +26,7 @@ namespace ProjetoDS.dao
         {
             try
             {
-                string sql = @"insert into produto (descricao, quantidade, fk_forid) values (@decricao, @quantidade, @fk_forid)";
+                string sql = @"insert into produto (descricao, quantidade, fk_forid) values (@decricao, @quantidade, @fk_for_id)";
 
 
                 //2 passo - organizar o sql
@@ -34,7 +34,9 @@ namespace ProjetoDS.dao
 
                 cmd.Parameters.AddWithValue("@descricao", obj.descricao);
                 cmd.Parameters.AddWithValue("@quantidade", obj.quantidade);
-                cmd.Parameters.AddWithValue("@fk_forid", obj.fk_fornecedor);
+
+
+                cmd.Parameters.AddWithValue("@fk_for_id", obj.fk_fornecedor);
                
                 conexao.Open();
 
@@ -61,7 +63,7 @@ namespace ProjetoDS.dao
         {
             try
             {
-                string sql = @"update produto set descricao = @descricao, quantidade=@quantidade, fk_forid=fk_forid where id_produto = @id";
+                string sql = @"update produto set descricao = @descricao, quantidade = @quantidade, fk_forid = @fk_for_id where id_produto = @id";
 
 
                 //2 passo - organizar o sql
@@ -69,7 +71,7 @@ namespace ProjetoDS.dao
 
                 cmd.Parameters.AddWithValue("@descricao", obj.descricao);
                 cmd.Parameters.AddWithValue("@quantidade", obj.quantidade);
-                cmd.Parameters.AddWithValue("@fk_forid", obj.fk_fornecedor);
+                cmd.Parameters.AddWithValue("@fk_for_id", obj.fk_fornecedor);
                 
 
                 cmd.Parameters.AddWithValue("@id", obj.id_produto);
@@ -108,6 +110,7 @@ namespace ProjetoDS.dao
 
                 //2 passo - organizar o sql
                 MySqlCommand cmd = new MySqlCommand(sql, conexao);
+                cmd.Parameters.AddWithValue("@id", obj.id_produto);
 
                 conexao.Open();
 
@@ -138,7 +141,7 @@ namespace ProjetoDS.dao
         {
 
             //1 passo - comando sql
-            string sql = @"select * produto";
+            string sql = @"select * from produto";
 
             //2 passo - organizar o sql
             MySqlCommand cmd = new MySqlCommand(sql, conexao);
@@ -162,7 +165,6 @@ namespace ProjetoDS.dao
             return tabelaProduto;
 
         }
-
 
         #endregion
     }

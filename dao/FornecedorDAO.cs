@@ -83,7 +83,6 @@ namespace ProjetoDS.dao
                 cmd.Parameters.AddWithValue("@telefone", obj.telefone);
                 cmd.Parameters.AddWithValue("@email", obj.email);
 
-
                 cmd.Parameters.AddWithValue("@id_fornecedor", obj.id);
 
                 conexao.Open();
@@ -140,8 +139,42 @@ namespace ProjetoDS.dao
         #endregion
 
 
+
+
         //colocar método listartodosfornecedores
 
-      
+        #region Método ListarTodosFornecedores
+
+        public DataTable ListarTodosFornecedores()
+        {
+
+            //1 passo - comando sql
+            string sql = @"select * from fornecedor";
+
+            //2 passo - organizar o sql
+            MySqlCommand cmd = new MySqlCommand(sql, conexao);
+
+            //3 passo - abcmdrir a conexao e executar o comando                
+            conexao.Open();
+            cmd.ExecuteNonQuery();
+
+            //4 passo - criar o MySQLDataAdapter
+            DataTable tabelaFornecedor = new DataTable();
+
+            //5 passo - criar o DataTable
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+
+            da.Fill(tabelaFornecedor);
+
+            //fechar conexão
+            conexao.Close();
+
+            //Retornar o DataTable com os dados
+            return tabelaFornecedor;
+
+        }
+
+        #endregion
+
     }
 }

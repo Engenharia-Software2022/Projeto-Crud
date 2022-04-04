@@ -62,6 +62,7 @@
             this.btnExcluir.Size = new System.Drawing.Size(150, 45);
             this.btnExcluir.TabIndex = 29;
             this.btnExcluir.Text = "Excluir";
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnAlterar
             // 
@@ -78,6 +79,7 @@
             this.btnAlterar.Size = new System.Drawing.Size(150, 45);
             this.btnAlterar.TabIndex = 28;
             this.btnAlterar.Text = "Alterar";
+            this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
             // dgvClientes
             // 
@@ -150,6 +152,7 @@
             this.btnCadastrar.Size = new System.Drawing.Size(150, 45);
             this.btnCadastrar.TabIndex = 26;
             this.btnCadastrar.Text = "Cadastrar";
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // txbId
             // 
