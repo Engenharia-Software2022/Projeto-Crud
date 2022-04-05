@@ -113,6 +113,18 @@
     <Compile Include="view\frmFornecedor.Designer.cs">
       <DependentUpon>frmFornecedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="view\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\frmProdutos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +146,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="view\frmFornecedor.resx">
       <DependentUpon>frmFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\frmProdutos.resx">
       <DependentUpon>frmProdutos.cs</DependentUpon>
@@ -163,6 +181,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-mensagem-301.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-mensagem-302.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-lock-50 %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users-icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

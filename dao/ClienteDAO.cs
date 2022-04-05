@@ -1,6 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
 using ProjetoDS.conexao;
 using ProjetoDS.model;
+using ProjetoDS.view;
 using System;
 using System.Data;
 using System.Windows.Forms;
@@ -144,6 +145,50 @@ namespace ProjetoDS.dao
             //Retornar o DataTable com os dados
             return tabelaCliente;
 
+        }
+
+        //Método efetuar login
+
+        public void EfetuaLogin(string email, string senha) 
+        {
+            try
+            {
+                //string sql
+                string sql = "select * from cliente where email = @email and senha = @senha";
+
+                //2 passo - organizar o sql
+                MySqlCommand cmd = new MySqlCommand(sql, conexao);
+
+                cmd.Parameters.AddWithValue("@email", email);
+                cmd.Parameters.AddWithValue("@senha", senha);
+
+                conexao.Open();
+
+                MySqlDataReader dados = cmd.ExecuteReader();
+
+                if (dados.Read())
+                {
+                    frmMenu frm = new frmMenu();
+                    frm.Show();
+
+                    conexao.Clone();
+
+                }
+                else 
+                {
+                    MessageBox.Show("Usuário ou Senha Inválidos");
+                    conexao.Clone();
+                }
+
+
+
+            }
+            catch (Exception erro)
+            {
+
+                MessageBox.Show("Erro ao acessar" + erro);
+                conexao.Clone();
+            }
         }
     }
 }

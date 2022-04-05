@@ -73,6 +73,16 @@ namespace ProjetoDS.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_lock_50__1_1 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-lock-50 (1)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_mensagem_30 {
             get {
                 object obj = ResourceManager.GetObject("icons8-mensagem-30", resourceCulture);
@@ -93,9 +103,29 @@ namespace ProjetoDS.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_mensagem_302 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-mensagem-302", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_user_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-user-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap users_icon {
+            get {
+                object obj = ResourceManager.GetObject("users-icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
