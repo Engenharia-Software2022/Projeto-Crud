@@ -40,6 +40,7 @@
             this.dgvClientes = new Guna.UI2.WinForms.Guna2DataGridView();
             this.btnAlterar = new Guna.UI2.WinForms.Guna2Button();
             this.btnExcluir = new Guna.UI2.WinForms.Guna2Button();
+            this.cb_nivelacesso = new Guna.UI2.WinForms.Guna2ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,7 +57,7 @@
             this.cbSexo.Items.AddRange(new object[] {
             "M",
             "F"});
-            this.cbSexo.Location = new System.Drawing.Point(62, 311);
+            this.cbSexo.Location = new System.Drawing.Point(60, 358);
             this.cbSexo.Name = "cbSexo";
             this.cbSexo.Size = new System.Drawing.Size(69, 36);
             this.cbSexo.TabIndex = 15;
@@ -250,12 +251,31 @@
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
+            // cb_nivelacesso
+            // 
+            this.cb_nivelacesso.BackColor = System.Drawing.Color.Transparent;
+            this.cb_nivelacesso.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cb_nivelacesso.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_nivelacesso.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cb_nivelacesso.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cb_nivelacesso.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cb_nivelacesso.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cb_nivelacesso.ItemHeight = 30;
+            this.cb_nivelacesso.Items.AddRange(new object[] {
+            "admin",
+            "usuario"});
+            this.cb_nivelacesso.Location = new System.Drawing.Point(62, 302);
+            this.cb_nivelacesso.Name = "cb_nivelacesso";
+            this.cb_nivelacesso.Size = new System.Drawing.Size(198, 36);
+            this.cb_nivelacesso.TabIndex = 21;
+            // 
             // Frmclientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(965, 485);
+            this.Controls.Add(this.cb_nivelacesso);
             this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.btnAlterar);
             this.Controls.Add(this.dgvClientes);
@@ -286,5 +306,6 @@
         private Guna.UI2.WinForms.Guna2DataGridView dgvClientes;
         private Guna.UI2.WinForms.Guna2Button btnAlterar;
         private Guna.UI2.WinForms.Guna2Button btnExcluir;
+        private Guna.UI2.WinForms.Guna2ComboBox cb_nivelacesso;
     }
 }

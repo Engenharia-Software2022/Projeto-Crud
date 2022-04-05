@@ -28,6 +28,10 @@ namespace ProjetoDS.view
 
             ClienteDAO dao = new ClienteDAO();
             dao.EfetuaLogin(email, senha);
+
+            //não funciona no método da classe cliente
+            //precisa ser na chamada
+            this.Hide();
         }
     }
 }

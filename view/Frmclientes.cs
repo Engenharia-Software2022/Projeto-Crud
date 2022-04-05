@@ -35,6 +35,7 @@ namespace ProjetoDS.view
                 obj.email = txbEmail.Text;
                 obj.senha = txbSenha.Text;
                 obj.sexo = cbSexo.Text;
+                obj.nivel_acesso = cb_nivelacesso.Text;
 
                 ClienteDAO dao = new ClienteDAO();
 

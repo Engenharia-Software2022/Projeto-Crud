@@ -16,5 +16,19 @@ namespace ProjetoDS.view
         {
             InitializeComponent();
         }
+
+        private void _consultaClientes_Click(object sender, EventArgs e)
+        {
+            frmConsultaClientes frm = new frmConsultaClientes();
+            frm.Show();
+
+        }
+
+        private void _cadastroDeClientes_Click(object sender, EventArgs e)
+        {
+            Frmclientes frm = new Frmclientes();
+            frm.Show();
+            this.Hide();
+        }
     }
 }

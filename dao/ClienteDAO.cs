@@ -22,7 +22,7 @@ namespace ProjetoDS.dao
         {
             try
             {
-                string sql = @"insert into cliente (nome, email, senha, sexo) values (@nome,@email,@senha,@sexo)";
+                string sql = @"insert into cliente (nome, email, senha, sexo, nivel_acesso) values (@nome,@email,@senha,@sexo, @nivel_acesso)";
 
 
                 //2 passo - organizar o sql
@@ -32,6 +32,7 @@ namespace ProjetoDS.dao
                 cmd.Parameters.AddWithValue("@email", obj.email);
                 cmd.Parameters.AddWithValue("@senha", obj.senha);
                 cmd.Parameters.AddWithValue("@sexo", obj.sexo);
+                cmd.Parameters.AddWithValue("@nivel_acesso", obj.nivel_acesso);
 
                 conexao.Open();
 
@@ -54,7 +55,7 @@ namespace ProjetoDS.dao
         {
             try
             {
-                string sql = @"update cliente set nome = @nome, email=@email, senha=@senha, sexo=@sexo where id_cliente = @id";
+                string sql = @"update cliente set nome = @nome, email=@email, senha=@senha, sexo=@sexo, nivel_acesso where id_cliente = @id";
 
 
                 //2 passo - organizar o sql
@@ -64,6 +65,8 @@ namespace ProjetoDS.dao
                 cmd.Parameters.AddWithValue("@email", obj.email);
                 cmd.Parameters.AddWithValue("@senha", obj.senha);
                 cmd.Parameters.AddWithValue("@sexo", obj.sexo);
+                cmd.Parameters.AddWithValue("@nivel_acesso", obj.nivel_acesso);
+
 
                 cmd.Parameters.AddWithValue("@id", obj.id);
 
@@ -149,7 +152,7 @@ namespace ProjetoDS.dao
 
         //Método efetuar login
 
-        public void EfetuaLogin(string email, string senha) 
+        public void EfetuaLogin(string email, string senha)
         {
             try
             {
@@ -168,13 +171,31 @@ namespace ProjetoDS.dao
 
                 if (dados.Read())
                 {
-                    frmMenu frm = new frmMenu();
-                    frm.Show();
+                    string nivel_acesso = dados.GetString("nivel_acesso");
 
-                    conexao.Clone();
+                    if (nivel_acesso.Equals("admin"))
+                    {
+                        frmMenu frm = new frmMenu();
+                        frm.Show();
+
+                        conexao.Clone();
+
+                        //restringindo acessos
+                    }
+                    else if (nivel_acesso.Equals("usuario"))
+                    {
+                        frmMenu frm = new frmMenu();
+                        frm._cadastroDeProdutos.Enabled = false;
+                        frm._cadastroDeFornecedores.Enabled = false;
+
+                        frm.Show();
+
+                        conexao.Clone();
+                    }
+
 
                 }
-                else 
+                else
                 {
                     MessageBox.Show("Usuário ou Senha Inválidos");
                     conexao.Clone();
@@ -189,6 +210,38 @@ namespace ProjetoDS.dao
                 MessageBox.Show("Erro ao acessar" + erro);
                 conexao.Clone();
             }
+
+            //Método Consulta de Clientes por nome 
+        }
+
+        public DataTable BuscarClientePorNome(string nome)
+        {
+
+            //1 passo - comando sql
+            string sql = @"select * from cliente where nome = @nome";
+
+            //2 passo - organizar o sql
+            MySqlCommand cmd = new MySqlCommand(sql, conexao);
+            cmd.Parameters.AddWithValue("@nome", nome);
+
+            //3 passo - abcmdrir a conexao e executar o comando                
+            conexao.Open();
+            cmd.ExecuteNonQuery();
+
+            //4 passo - criar o MySQLDataAdapter
+            DataTable tabelaCliente = new DataTable();
+
+            //5 passo - criar o DataTable
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+
+            da.Fill(tabelaCliente);
+
+            //fechar conexão
+            conexao.Close();
+
+            //Retornar o DataTable com os dados
+            return tabelaCliente;
+
         }
     }
 }

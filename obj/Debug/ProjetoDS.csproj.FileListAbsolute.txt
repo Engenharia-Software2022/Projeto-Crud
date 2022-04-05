@@ -61,3 +61,4 @@ C:\Users\Marcos\Desktop\Projeto\ProjetoDS\bin\Debug\System.Runtime.CompilerServi
 C:\Users\Marcos\Desktop\Projeto\ProjetoDS\obj\Debug\ProjetoDS.view.frmFornecedor.resources
 C:\Users\Marcos\Desktop\Projeto\ProjetoDS\obj\Debug\ProjetoDS.view.frmLogin.resources
 C:\Users\Marcos\Desktop\Projeto\ProjetoDS\obj\Debug\ProjetoDS.view.frmMenu.resources
+C:\Users\Marcos\Desktop\Projeto\ProjetoDS\obj\Debug\ProjetoDS.view.frmConsultaClientes.resources

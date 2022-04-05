@@ -10,6 +10,10 @@ namespace ProjetoDS.model
         public string email { get; set; }
         public string senha { get; set; }
         public string sexo { get; set; }
+        public string nivel_acesso { get; set; }
+
+
+
 
 
 
