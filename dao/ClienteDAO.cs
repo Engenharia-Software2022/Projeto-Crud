@@ -55,7 +55,7 @@ namespace ProjetoDS.dao
         {
             try
             {
-                string sql = @"update cliente set nome = @nome, email=@email, senha=@senha, sexo=@sexo, nivel_acesso where id_cliente = @id";
+                string sql = @"update cliente set nome=@nome, email=@email, senha=@senha, sexo=@sexo, nivel_acesso=@nivel_acesso where id_cliente = @id";
 
 
                 //2 passo - organizar o sql

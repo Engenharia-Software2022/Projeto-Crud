@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ProjetoDS.dao;
+using ProjetoDS.model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,21 +12,15 @@ using System.Windows.Forms;
 
 namespace ProjetoDS.view
 {
-    public partial class frmMenu : Form
+    public partial class frmProdutos2 : Form
     {
-        public frmMenu()
+        public frmProdutos2()
         {
             InitializeComponent();
         }
 
-        private void _consultaClientes_Click(object sender, EventArgs e)
-        {
-            
-        }
+       
 
-        private void _cadastroDeClientes_Click(object sender, EventArgs e)
-        {
-            
-        }
+       
     }
 }

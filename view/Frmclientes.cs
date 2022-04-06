@@ -12,88 +12,69 @@ using System.Windows.Forms;
 
 namespace ProjetoDS.view
 {
-    public partial class Frmclientes : Form
+    public partial class frmClientes : Form
     {
-        public Frmclientes()
+        public frmClientes()
         {
             InitializeComponent();
         }
 
-        private void Frmclientes_Activated(object sender, EventArgs e)
-        {
-            ClienteDAO dao = new ClienteDAO();
-            dgvClientes.DataSource = dao.ListarTodosClientes();
-        }
 
-        private void btnCadastrar_Click_1(object sender, EventArgs e)
-        {
-            try
-            {
-                Cliente obj = new Cliente();
+        #region Método Cadastrar Cliente
 
-                obj.nome = txbNome.Text;
-                obj.email = txbEmail.Text;
-                obj.senha = txbSenha.Text;
-                obj.sexo = cbSexo.Text;
-                obj.nivel_acesso = cb_nivelacesso.Text;
-
-                ClienteDAO dao = new ClienteDAO();
-
-                dao.Cadastrar(obj);
-
-                //atualiza o datagridview
-                dgvClientes.DataSource = dao.ListarTodosClientes();
-
-            }
-            catch (Exception erro)
-
-            {
-                MessageBox.Show("Aconteceu um erro" + erro);
-            }
-
-        }
-
-        private void Frmclientes_Load(object sender, EventArgs e)
-        {
-            ClienteDAO dao = new ClienteDAO();
-
-            //atualiza o datagridview
-            dgvClientes.DataSource = dao.ListarTodosClientes();
-   
-        }
-
-        private void btnAlterar_Click(object sender, EventArgs e)
+        private void btnCadastrarCliente_Click(object sender, EventArgs e)
         {
             Cliente obj = new Cliente();
 
+            //receber os dados dos campos
             obj.nome = txbNome.Text;
             obj.email = txbEmail.Text;
-            obj.sexo = cbSexo.Text;
             obj.senha = txbSenha.Text;
+            obj.sexo = cbSexo.Text;
+            obj.nivel_acesso = cbNivel_Acesso.Text;
 
-            obj.id = int.Parse(txbId.Text);
-            
+            // criar o objeto da classe clienteDAO
 
             ClienteDAO dao = new ClienteDAO();
-
-            dao.alterar(obj);
+            dao.Cadastrar(obj);
 
             //atualiza o datagridview
-            dgvClientes.DataSource = dao.ListarTodosClientes();
-
-
+            dgvCliente.DataSource = dao.ListarTodosClientes();
         }
 
-        private void dgvClientes_CellClick(object sender, DataGridViewCellEventArgs e)
+        #endregion
+
+       
+        #region Listar todos os clientes
+        private void frmClientes_Load(object sender, EventArgs e)
         {
-            txbId.Text = dgvClientes.CurrentRow.Cells[0].Value.ToString();
-            txbNome.Text = dgvClientes.CurrentRow.Cells[1].Value.ToString();
-            txbEmail.Text = dgvClientes.CurrentRow.Cells[2].Value.ToString();
-            txbSenha.Text = dgvClientes.CurrentRow.Cells[3].Value.ToString();
-            cbSexo.Text = dgvClientes.CurrentRow.Cells[4].Value.ToString();
+            //implementando método listartodosclientes
+            ClienteDAO dao = new ClienteDAO();
+            dgvCliente.DataSource = dao.ListarTodosClientes();
+
+
         }
 
-        private void btnExcluir_Click(object sender, EventArgs e)
+        #endregion
+
+
+        #region Carregando dados do datagridview para os combobox
+        private void dgvCliente_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //Carregando os dados do datagridview para os textbox clicando no item do datagridview
+            txbId.Text = dgvCliente.CurrentRow.Cells[0].Value.ToString();
+            txbNome.Text = dgvCliente.CurrentRow.Cells[1].Value.ToString();
+            txbEmail.Text = dgvCliente.CurrentRow.Cells[2].Value.ToString();
+            txbSenha.Text = dgvCliente.CurrentRow.Cells[3].Value.ToString();
+            cbSexo.Text = dgvCliente.CurrentRow.Cells[4].Value.ToString();
+            cbNivel_Acesso.Text = dgvCliente.CurrentRow.Cells[5].Value.ToString();
+        }
+
+        #endregion
+
+
+        #region Método excluir Cliente
+        private void btnExcluirCliente_Click(object sender, EventArgs e)
         {
             Cliente obj = new Cliente();
 
@@ -101,12 +82,33 @@ namespace ProjetoDS.view
 
             ClienteDAO dao = new ClienteDAO();
             dao.excluir(obj);
-            dgvClientes.DataSource = dao.ListarTodosClientes();
+            dgvCliente.DataSource = dao.ListarTodosClientes();
         }
+        #endregion
 
-        private void dgvClientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
+
+        #region Método Alterar Cliente
+        private void BtnAlterarCliente_Click(object sender, EventArgs e)
         {
+            Cliente obj = new Cliente();
 
+            //receber os dados dos campos
+            obj.nome = txbNome.Text;
+            obj.email = txbEmail.Text;
+            obj.senha = txbSenha.Text;
+            obj.sexo = cbSexo.Text;
+            obj.nivel_acesso = cbNivel_Acesso.Text;
+
+            obj.id = int.Parse(txbId.Text);
+
+            // criar o objeto da classe clienteDAO
+
+            ClienteDAO dao = new ClienteDAO();
+            dao.alterar(obj);
+
+            //atualiza o datagridview
+            dgvCliente.DataSource = dao.ListarTodosClientes();
         }
+        #endregion
     }
 }

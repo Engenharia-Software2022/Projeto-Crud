@@ -101,24 +101,6 @@
     <Compile Include="model\Produto.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="view\Frmclientes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="view\Frmclientes.Designer.cs">
-      <DependentUpon>Frmclientes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="view\frmConsultaClientes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="view\frmConsultaClientes.Designer.cs">
-      <DependentUpon>frmConsultaClientes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="view\frmFornecedor.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="view\frmFornecedor.Designer.cs">
-      <DependentUpon>frmFornecedor.cs</DependentUpon>
-    </Compile>
     <Compile Include="view\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,11 +113,17 @@
     <Compile Include="view\frmMenu.Designer.cs">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="view\frmProdutos.cs">
+    <Compile Include="view\frmClientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="view\frmProdutos.Designer.cs">
-      <DependentUpon>frmProdutos.cs</DependentUpon>
+    <Compile Include="view\frmClientes.Designer.cs">
+      <DependentUpon>frmClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\frmProdutos2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\frmProdutos2.Designer.cs">
+      <DependentUpon>frmProdutos2.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -147,23 +135,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="view\Frmclientes.resx">
-      <DependentUpon>Frmclientes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="view\frmConsultaClientes.resx">
-      <DependentUpon>frmConsultaClientes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="view\frmFornecedor.resx">
-      <DependentUpon>frmFornecedor.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="view\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="view\frmProdutos.resx">
-      <DependentUpon>frmProdutos.cs</DependentUpon>
+    <EmbeddedResource Include="view\frmClientes.resx">
+      <DependentUpon>frmClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\frmProdutos2.resx">
+      <DependentUpon>frmProdutos2.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

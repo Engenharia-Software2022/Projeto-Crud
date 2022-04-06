@@ -36,7 +36,6 @@ C:\Users\Marcos\Desktop\Projeto\ProjetoDS\obj\Debug\ProjetoDS.csproj.CopyComplet
 C:\Users\Marcos\Desktop\Projeto\ProjetoDS\obj\Debug\ProjetoDS.exe
 C:\Users\Marcos\Desktop\Projeto\ProjetoDS\obj\Debug\ProjetoDS.pdb
 C:\Users\Marcos\Desktop\Projeto\ProjetoDS\bin\Debug\Guna.UI2.dll
-C:\Users\Marcos\Desktop\Projeto\ProjetoDS\obj\Debug\ProjetoDS.view.frmProdutos.resources
 C:\Users\Marcos\Desktop\Projeto\ProjetoDS\bin\Debug\BouncyCastle.Crypto.dll
 C:\Users\Marcos\Desktop\Projeto\ProjetoDS\bin\Debug\Google.Protobuf.dll
 C:\Users\Marcos\Desktop\Projeto\ProjetoDS\bin\Debug\K4os.Compression.LZ4.dll
@@ -58,7 +57,6 @@ C:\Users\Marcos\Desktop\Projeto\ProjetoDS\bin\Debug\System.Buffers.xml
 C:\Users\Marcos\Desktop\Projeto\ProjetoDS\bin\Debug\System.Memory.xml
 C:\Users\Marcos\Desktop\Projeto\ProjetoDS\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\Marcos\Desktop\Projeto\ProjetoDS\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-C:\Users\Marcos\Desktop\Projeto\ProjetoDS\obj\Debug\ProjetoDS.view.frmFornecedor.resources
 C:\Users\Marcos\Desktop\Projeto\ProjetoDS\obj\Debug\ProjetoDS.view.frmLogin.resources
 C:\Users\Marcos\Desktop\Projeto\ProjetoDS\obj\Debug\ProjetoDS.view.frmMenu.resources
-C:\Users\Marcos\Desktop\Projeto\ProjetoDS\obj\Debug\ProjetoDS.view.frmConsultaClientes.resources
+C:\Users\Marcos\Desktop\Projeto\ProjetoDS\obj\Debug\ProjetoDS.view.frmProdutos2.resources
