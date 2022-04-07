@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.btnLogin = new Guna.UI2.WinForms.Guna2Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.txbSenha = new Guna.UI2.WinForms.Guna2TextBox();
             this.txbEmail = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,69 +48,12 @@
             this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
             this.btnLogin.HoverState.FillColor = System.Drawing.Color.Teal;
-            this.btnLogin.Location = new System.Drawing.Point(148, 268);
+            this.btnLogin.Location = new System.Drawing.Point(156, 264);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(180, 45);
+            this.btnLogin.Size = new System.Drawing.Size(170, 45);
             this.btnLogin.TabIndex = 2;
             this.btnLogin.Text = "Login";
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.Image = global::ProjetoDS.Properties.Resources.users_icon;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(179, 24);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(123, 90);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox1.TabIndex = 3;
-            this.guna2PictureBox1.TabStop = false;
-            // 
-            // txbSenha
-            // 
-            this.txbSenha.BorderColor = System.Drawing.Color.Teal;
-            this.txbSenha.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txbSenha.DefaultText = "";
-            this.txbSenha.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txbSenha.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txbSenha.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txbSenha.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txbSenha.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txbSenha.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txbSenha.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txbSenha.IconLeft = global::ProjetoDS.Properties.Resources.icons8_lock_50__1_1;
-            this.txbSenha.IconLeftSize = new System.Drawing.Size(30, 30);
-            this.txbSenha.Location = new System.Drawing.Point(139, 206);
-            this.txbSenha.Name = "txbSenha";
-            this.txbSenha.PasswordChar = '*';
-            this.txbSenha.PlaceholderText = "Senha";
-            this.txbSenha.SelectedText = "";
-            this.txbSenha.Size = new System.Drawing.Size(200, 36);
-            this.txbSenha.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.txbSenha.TabIndex = 1;
-            // 
-            // txbEmail
-            // 
-            this.txbEmail.BorderColor = System.Drawing.Color.Teal;
-            this.txbEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txbEmail.DefaultText = "";
-            this.txbEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txbEmail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txbEmail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txbEmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txbEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txbEmail.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txbEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txbEmail.IconLeft = global::ProjetoDS.Properties.Resources.icons8_mensagem_302;
-            this.txbEmail.IconLeftSize = new System.Drawing.Size(27, 27);
-            this.txbEmail.Location = new System.Drawing.Point(139, 164);
-            this.txbEmail.Name = "txbEmail";
-            this.txbEmail.PasswordChar = '\0';
-            this.txbEmail.PlaceholderText = "Email";
-            this.txbEmail.SelectedText = "";
-            this.txbEmail.Size = new System.Drawing.Size(200, 36);
-            this.txbEmail.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.txbEmail.TabIndex = 0;
             // 
             // label1
             // 
@@ -134,6 +77,63 @@
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
             this.guna2ControlBox1.TabIndex = 5;
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.Image = global::ProjetoDS.Properties.Resources.Apps_preferences_desktop_user_password_icon;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(171, 31);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(123, 90);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox1.TabIndex = 3;
+            this.guna2PictureBox1.TabStop = false;
+            // 
+            // txbSenha
+            // 
+            this.txbSenha.BorderColor = System.Drawing.Color.Teal;
+            this.txbSenha.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txbSenha.DefaultText = "";
+            this.txbSenha.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txbSenha.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txbSenha.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbSenha.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbSenha.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbSenha.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txbSenha.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbSenha.IconLeft = global::ProjetoDS.Properties.Resources.icons8_lock_50__1_1;
+            this.txbSenha.IconLeftSize = new System.Drawing.Size(25, 25);
+            this.txbSenha.Location = new System.Drawing.Point(139, 206);
+            this.txbSenha.Name = "txbSenha";
+            this.txbSenha.PasswordChar = '*';
+            this.txbSenha.PlaceholderText = "Senha";
+            this.txbSenha.SelectedText = "";
+            this.txbSenha.Size = new System.Drawing.Size(200, 36);
+            this.txbSenha.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txbSenha.TabIndex = 1;
+            // 
+            // txbEmail
+            // 
+            this.txbEmail.BorderColor = System.Drawing.Color.Teal;
+            this.txbEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txbEmail.DefaultText = "";
+            this.txbEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txbEmail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txbEmail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbEmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbEmail.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txbEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbEmail.IconLeft = global::ProjetoDS.Properties.Resources.icons8_mensagem_302;
+            this.txbEmail.IconLeftSize = new System.Drawing.Size(25, 25);
+            this.txbEmail.Location = new System.Drawing.Point(139, 164);
+            this.txbEmail.Name = "txbEmail";
+            this.txbEmail.PasswordChar = '\0';
+            this.txbEmail.PlaceholderText = "Email";
+            this.txbEmail.SelectedText = "";
+            this.txbEmail.Size = new System.Drawing.Size(200, 36);
+            this.txbEmail.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txbEmail.TabIndex = 0;
             // 
             // frmLogin
             // 

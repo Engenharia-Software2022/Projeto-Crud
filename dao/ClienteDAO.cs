@@ -33,6 +33,8 @@ namespace ProjetoDS.dao
                 cmd.Parameters.AddWithValue("@senha", obj.senha);
                 cmd.Parameters.AddWithValue("@sexo", obj.sexo);
                 cmd.Parameters.AddWithValue("@nivel_acesso", obj.nivel_acesso);
+                
+
 
                 conexao.Open();
 
@@ -119,8 +121,6 @@ namespace ProjetoDS.dao
 
 
         //Metodo lIstar clientes
-
-
         public DataTable ListarTodosClientes()
         {
 
@@ -214,7 +214,7 @@ namespace ProjetoDS.dao
             //Método Consulta de Clientes por nome 
         }
 
-        public DataTable BuscarClientePorNome(string nome)
+        public DataTable ConsultarClientePorNome(string nome)
         {
 
             //1 passo - comando sql

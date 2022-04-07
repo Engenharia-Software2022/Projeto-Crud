@@ -59,4 +59,5 @@ C:\Users\Marcos\Desktop\Projeto\ProjetoDS\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\Marcos\Desktop\Projeto\ProjetoDS\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\Marcos\Desktop\Projeto\ProjetoDS\obj\Debug\ProjetoDS.view.frmLogin.resources
 C:\Users\Marcos\Desktop\Projeto\ProjetoDS\obj\Debug\ProjetoDS.view.frmMenu.resources
-C:\Users\Marcos\Desktop\Projeto\ProjetoDS\obj\Debug\ProjetoDS.view.frmProdutos2.resources
+C:\Users\Marcos\Desktop\Projeto\ProjetoDS\obj\Debug\ProjetoDS.view.frmFornecedor.resources
+C:\Users\Marcos\Desktop\Projeto\ProjetoDS\obj\Debug\ProjetoDS.view.frmProdutos.resources

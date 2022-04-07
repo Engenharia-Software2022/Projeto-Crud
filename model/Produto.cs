@@ -11,5 +11,7 @@ namespace ProjetoDS.model
         //Chave estrangeira da tabela de fornecedor
         public int fk_fornecedor { get; set; }
 
+        public double preco { get; set; }
+
     }
 }

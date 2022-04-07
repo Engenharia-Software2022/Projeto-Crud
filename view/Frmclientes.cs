@@ -110,5 +110,25 @@ namespace ProjetoDS.view
             dgvCliente.DataSource = dao.ListarTodosClientes();
         }
         #endregion
+
+        #region Método buscar cliente por nome
+
+
+        #endregion
+
+        private void btnConsultarClienteNome_Click(object sender, EventArgs e)
+        {
+            ClienteDAO dao = new ClienteDAO();
+
+            string nome = txbPesquisa.Text;
+
+            dgvConsultaCliente.DataSource = dao.ConsultarClientePorNome(nome);
+
+            if (dgvConsultaCliente.Rows.Count <= 0) 
+            {
+                MessageBox.Show("Nenhum Cliente encontrado!");
+                dgvConsultaCliente.DataSource = dao.ListarTodosClientes();
+            }
+        }
     }
 }

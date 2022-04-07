@@ -26,7 +26,7 @@ namespace ProjetoDS.dao
         {
             try
             {
-                string sql = @"insert into produto (descricao, quantidade, fk_forid) values (@descricao, @quantidade, @fk_for_id)";
+                string sql = @"insert into produto (descricao, quantidade, fk_forid, preco) values (@descricao, @quantidade, @fk_for_id, @preco)";
 
 
                 //2 passo - organizar o sql
@@ -37,7 +37,9 @@ namespace ProjetoDS.dao
 
 
                 cmd.Parameters.AddWithValue("@fk_for_id", obj.fk_fornecedor);
-               
+                cmd.Parameters.AddWithValue("@preco", obj.preco);
+
+
                 conexao.Open();
 
                 cmd.ExecuteNonQuery();
@@ -63,7 +65,7 @@ namespace ProjetoDS.dao
         {
             try
             {
-                string sql = @"update produto set descricao = @descricao, quantidade = @quantidade, fk_forid = @fk_for_id where id_produto = @id";
+                string sql = @"update produto set descricao = @descricao, quantidade = @quantidade, fk_forid = @fk_for_id, preco = @ preco where id_produto = @id";
 
 
                 //2 passo - organizar o sql
@@ -72,7 +74,8 @@ namespace ProjetoDS.dao
                 cmd.Parameters.AddWithValue("@descricao", obj.descricao);
                 cmd.Parameters.AddWithValue("@quantidade", obj.quantidade);
                 cmd.Parameters.AddWithValue("@fk_for_id", obj.fk_fornecedor);
-                
+                cmd.Parameters.AddWithValue("preco", obj.preco);
+
 
                 cmd.Parameters.AddWithValue("@id", obj.id_produto);
 
@@ -135,8 +138,8 @@ namespace ProjetoDS.dao
         public DataTable ListarTodosProdutos()
         {
 
-            //1 passo - comando sql
-            string sql = @"select p.id_produto 'Código', p.descricao 'Descrição', p.quantidade 'Quantidade', f.nome 'Fornecedor'
+            //1 passo - comando sql com inner join para alterar visualização dos campos e unir as duas tabelas
+            string sql = @"select p.id_produto 'Código', p.descricao 'Descrição', p.quantidade 'Quantidade',p.preco 'Preço', f.nome 'Fornecedor'
                            from produto as p join fornecedor as f
                             on (p.fk_forid = f.id_fornecedor)";
 

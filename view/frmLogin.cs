@@ -30,7 +30,7 @@ namespace ProjetoDS.view
             dao.EfetuaLogin(email, senha);
 
             //não funciona no método da classe cliente
-            //precisa ser na chamada
+            //precisa ser na chamada do método
             this.Hide();
         }
     }

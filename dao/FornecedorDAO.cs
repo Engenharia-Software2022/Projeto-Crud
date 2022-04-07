@@ -113,7 +113,8 @@ namespace ProjetoDS.dao
 
                 //2 passo - organizar o sql
                 MySqlCommand cmd = new MySqlCommand(sql, conexao);
-                cmd.Parameters.AddWithValue("@id_fornecedor", obj.id);
+
+                cmd.Parameters.AddWithValue("@id", obj.id);
 
                 conexao.Open();
 
