@@ -35,9 +35,7 @@
             this._cadastroDeFornecedores = new System.Windows.Forms.ToolStripMenuItem();
             this.menu_produtos = new System.Windows.Forms.ToolStripMenuItem();
             this._cadastroDeProdutos = new System.Windows.Forms.ToolStripMenuItem();
-            this._consultaEstoque = new System.Windows.Forms.ToolStripMenuItem();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this._consultaClientes = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,15 +47,14 @@
             this.menu_produtos});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 25);
+            this.menuStrip1.Size = new System.Drawing.Size(1030, 25);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // menu_cliente
             // 
             this.menu_cliente.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this._cadastroDeClientes,
-            this._consultaClientes});
+            this._cadastroDeClientes});
             this.menu_cliente.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menu_cliente.Name = "menu_cliente";
             this.menu_cliente.Size = new System.Drawing.Size(65, 21);
@@ -66,8 +63,8 @@
             // _cadastroDeClientes
             // 
             this._cadastroDeClientes.Name = "_cadastroDeClientes";
-            this._cadastroDeClientes.Size = new System.Drawing.Size(197, 22);
-            this._cadastroDeClientes.Text = "Cadastro de Clientes";
+            this._cadastroDeClientes.Size = new System.Drawing.Size(184, 22);
+            this._cadastroDeClientes.Text = "Cadastro/Consulta";
             this._cadastroDeClientes.Click += new System.EventHandler(this._cadastroDeClientes_Click);
             // 
             // menu_fornecedor
@@ -82,14 +79,14 @@
             // _cadastroDeFornecedores
             // 
             this._cadastroDeFornecedores.Name = "_cadastroDeFornecedores";
-            this._cadastroDeFornecedores.Size = new System.Drawing.Size(232, 22);
-            this._cadastroDeFornecedores.Text = "Cadastro de Fornecedores";
+            this._cadastroDeFornecedores.Size = new System.Drawing.Size(184, 22);
+            this._cadastroDeFornecedores.Text = "Cadastro/Consulta";
+            this._cadastroDeFornecedores.Click += new System.EventHandler(this._cadastroDeFornecedores_Click);
             // 
             // menu_produtos
             // 
             this.menu_produtos.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this._cadastroDeProdutos,
-            this._consultaEstoque});
+            this._cadastroDeProdutos});
             this.menu_produtos.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menu_produtos.Name = "menu_produtos";
             this.menu_produtos.Size = new System.Drawing.Size(73, 21);
@@ -98,45 +95,35 @@
             // _cadastroDeProdutos
             // 
             this._cadastroDeProdutos.Name = "_cadastroDeProdutos";
-            this._cadastroDeProdutos.Size = new System.Drawing.Size(205, 22);
-            this._cadastroDeProdutos.Text = "Cadastro de Produtos";
-            // 
-            // _consultaEstoque
-            // 
-            this._consultaEstoque.Name = "_consultaEstoque";
-            this._consultaEstoque.Size = new System.Drawing.Size(205, 22);
-            this._consultaEstoque.Text = "Consulta Estoque";
+            this._cadastroDeProdutos.Size = new System.Drawing.Size(180, 22);
+            this._cadastroDeProdutos.Text = "Cadastro/Colsulta";
+            this._cadastroDeProdutos.Click += new System.EventHandler(this._cadastroDeProdutos_Click);
             // 
             // guna2ControlBox1
             // 
             this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
             this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(747, 0);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(977, 1);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
-            this.guna2ControlBox1.Size = new System.Drawing.Size(38, 25);
+            this.guna2ControlBox1.Size = new System.Drawing.Size(32, 22);
             this.guna2ControlBox1.TabIndex = 1;
-            // 
-            // _consultaClientes
-            // 
-            this._consultaClientes.Name = "_consultaClientes";
-            this._consultaClientes.Size = new System.Drawing.Size(197, 22);
-            this._consultaClientes.Text = "Consulta Clientes";
-            this._consultaClientes.Click += new System.EventHandler(this._consultaClientes_Click);
             // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1030, 514);
             this.Controls.Add(this.guna2ControlBox1);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmMenu";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "frmMenu";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -153,8 +140,6 @@
         public System.Windows.Forms.ToolStripMenuItem _cadastroDeClientes;
         public System.Windows.Forms.ToolStripMenuItem _cadastroDeFornecedores;
         public System.Windows.Forms.ToolStripMenuItem _cadastroDeProdutos;
-        public System.Windows.Forms.ToolStripMenuItem _consultaEstoque;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
-        public System.Windows.Forms.ToolStripMenuItem _consultaClientes;
     }
 }

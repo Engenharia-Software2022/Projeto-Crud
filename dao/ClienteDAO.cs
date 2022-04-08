@@ -4,6 +4,7 @@ using ProjetoDS.model;
 using ProjetoDS.view;
 using System;
 using System.Data;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace ProjetoDS.dao
@@ -178,7 +179,7 @@ namespace ProjetoDS.dao
                         frmMenu frm = new frmMenu();
                         frm.Show();
 
-                        conexao.Clone();
+                        conexao.Close();
 
                         //restringindo acessos
                     }
@@ -190,7 +191,7 @@ namespace ProjetoDS.dao
 
                         frm.Show();
 
-                        conexao.Clone();
+                        conexao.Close();
                     }
 
 
@@ -198,7 +199,7 @@ namespace ProjetoDS.dao
                 else
                 {
                     MessageBox.Show("Usuário ou Senha Inválidos");
-                    conexao.Clone();
+                    conexao.Close();
                 }
 
 
@@ -208,7 +209,7 @@ namespace ProjetoDS.dao
             {
 
                 MessageBox.Show("Erro ao acessar" + erro);
-                conexao.Clone();
+                conexao.Close();
             }
 
             //Método Consulta de Clientes por nome 

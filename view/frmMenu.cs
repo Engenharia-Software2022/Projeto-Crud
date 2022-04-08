@@ -24,7 +24,23 @@ namespace ProjetoDS.view
 
         private void _cadastroDeClientes_Click(object sender, EventArgs e)
         {
-            
+            frmClientes frm = new frmClientes();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void _cadastroDeFornecedores_Click(object sender, EventArgs e)
+        {
+            frmFornecedor frm = new frmFornecedor();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void _cadastroDeProdutos_Click(object sender, EventArgs e)
+        {
+            frmProdutos frm = new frmProdutos();
+            frm.MdiParent = this;
+            frm.Show();
         }
     }
 }
