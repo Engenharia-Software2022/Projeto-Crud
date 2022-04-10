@@ -53,8 +53,8 @@
             this.btnAlterarProduto = new System.Windows.Forms.Button();
             this.btnCadastrarProduto = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.tabProdutos.SuspendLayout();
             this.tabPageCadastro.SuspendLayout();
@@ -73,7 +73,7 @@
             this.tabProdutos.Location = new System.Drawing.Point(12, 50);
             this.tabProdutos.Name = "tabProdutos";
             this.tabProdutos.SelectedIndex = 0;
-            this.tabProdutos.Size = new System.Drawing.Size(851, 341);
+            this.tabProdutos.Size = new System.Drawing.Size(865, 413);
             this.tabProdutos.TabIndex = 0;
             // 
             // tabPageCadastro
@@ -83,7 +83,7 @@
             this.tabPageCadastro.Location = new System.Drawing.Point(4, 29);
             this.tabPageCadastro.Name = "tabPageCadastro";
             this.tabPageCadastro.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageCadastro.Size = new System.Drawing.Size(843, 308);
+            this.tabPageCadastro.Size = new System.Drawing.Size(857, 380);
             this.tabPageCadastro.TabIndex = 0;
             this.tabPageCadastro.Text = "Cadastro Produtos";
             this.tabPageCadastro.UseVisualStyleBackColor = true;
@@ -100,9 +100,9 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.cbFornecedor);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(6, 52);
+            this.groupBox1.Location = new System.Drawing.Point(6, 17);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(804, 125);
+            this.groupBox1.Size = new System.Drawing.Size(848, 174);
             this.groupBox1.TabIndex = 86;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cadastro";
@@ -113,13 +113,13 @@
             this.txbPreco.Location = new System.Drawing.Point(621, 93);
             this.txbPreco.Name = "txbPreco";
             this.txbPreco.Size = new System.Drawing.Size(78, 26);
-            this.txbPreco.TabIndex = 86;
+            this.txbPreco.TabIndex = 5;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(538, 99);
+            this.label5.Location = new System.Drawing.Point(546, 99);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(71, 16);
             this.label5.TabIndex = 87;
@@ -131,13 +131,13 @@
             this.txbId.Location = new System.Drawing.Point(111, 25);
             this.txbId.Name = "txbId";
             this.txbId.Size = new System.Drawing.Size(65, 26);
-            this.txbId.TabIndex = 79;
+            this.txbId.TabIndex = 1;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(54, 31);
+            this.label4.Location = new System.Drawing.Point(56, 30);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(51, 16);
             this.label4.TabIndex = 85;
@@ -147,7 +147,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(36, 65);
+            this.label2.Location = new System.Drawing.Point(38, 65);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 16);
             this.label2.TabIndex = 83;
@@ -159,7 +159,7 @@
             this.txbDescricao.Location = new System.Drawing.Point(111, 59);
             this.txbDescricao.Name = "txbDescricao";
             this.txbDescricao.Size = new System.Drawing.Size(407, 26);
-            this.txbDescricao.TabIndex = 80;
+            this.txbDescricao.TabIndex = 2;
             // 
             // txbQuantidade
             // 
@@ -167,13 +167,13 @@
             this.txbQuantidade.Location = new System.Drawing.Point(621, 59);
             this.txbQuantidade.Name = "txbQuantidade";
             this.txbQuantidade.Size = new System.Drawing.Size(78, 26);
-            this.txbQuantidade.TabIndex = 81;
+            this.txbQuantidade.TabIndex = 4;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(538, 65);
+            this.label3.Location = new System.Drawing.Point(540, 65);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(77, 16);
             this.label3.TabIndex = 84;
@@ -186,13 +186,13 @@
             this.cbFornecedor.Location = new System.Drawing.Point(111, 91);
             this.cbFornecedor.Name = "cbFornecedor";
             this.cbFornecedor.Size = new System.Drawing.Size(282, 28);
-            this.cbFornecedor.TabIndex = 82;
+            this.cbFornecedor.TabIndex = 3;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(28, 97);
+            this.label1.Location = new System.Drawing.Point(30, 98);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(77, 16);
             this.label1.TabIndex = 76;
@@ -205,7 +205,7 @@
             this.tabPageConsultaProduto.Location = new System.Drawing.Point(4, 29);
             this.tabPageConsultaProduto.Name = "tabPageConsultaProduto";
             this.tabPageConsultaProduto.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageConsultaProduto.Size = new System.Drawing.Size(843, 332);
+            this.tabPageConsultaProduto.Size = new System.Drawing.Size(857, 380);
             this.tabPageConsultaProduto.TabIndex = 1;
             this.tabPageConsultaProduto.Text = "Consulta Produtos";
             this.tabPageConsultaProduto.UseVisualStyleBackColor = true;
@@ -215,7 +215,7 @@
             this.dgvProduto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProduto.Location = new System.Drawing.Point(16, 158);
             this.dgvProduto.Name = "dgvProduto";
-            this.dgvProduto.Size = new System.Drawing.Size(811, 150);
+            this.dgvProduto.Size = new System.Drawing.Size(828, 150);
             this.dgvProduto.TabIndex = 92;
             this.dgvProduto.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProduto_CellClick_1);
             // 
@@ -239,7 +239,7 @@
             this.txPesquisaProduto.Location = new System.Drawing.Point(104, 53);
             this.txPesquisaProduto.Name = "txPesquisaProduto";
             this.txPesquisaProduto.Size = new System.Drawing.Size(317, 26);
-            this.txPesquisaProduto.TabIndex = 81;
+            this.txPesquisaProduto.TabIndex = 1;
             // 
             // btnBuscarProduto
             // 
@@ -249,7 +249,7 @@
             this.btnBuscarProduto.Location = new System.Drawing.Point(690, 48);
             this.btnBuscarProduto.Name = "btnBuscarProduto";
             this.btnBuscarProduto.Size = new System.Drawing.Size(110, 40);
-            this.btnBuscarProduto.TabIndex = 4;
+            this.btnBuscarProduto.TabIndex = 3;
             this.btnBuscarProduto.Text = "Buscar";
             this.btnBuscarProduto.UseVisualStyleBackColor = false;
             // 
@@ -260,7 +260,7 @@
             this.cbFiltroProduto.Location = new System.Drawing.Point(496, 54);
             this.cbFiltroProduto.Name = "cbFiltroProduto";
             this.cbFiltroProduto.Size = new System.Drawing.Size(182, 28);
-            this.cbFiltroProduto.TabIndex = 84;
+            this.cbFiltroProduto.TabIndex = 2;
             // 
             // label8
             // 
@@ -289,10 +289,10 @@
             this.ExcluirProduto.BackColor = System.Drawing.Color.LightSlateGray;
             this.ExcluirProduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ExcluirProduto.ForeColor = System.Drawing.Color.White;
-            this.ExcluirProduto.Location = new System.Drawing.Point(495, 397);
+            this.ExcluirProduto.Location = new System.Drawing.Point(502, 469);
             this.ExcluirProduto.Name = "ExcluirProduto";
             this.ExcluirProduto.Size = new System.Drawing.Size(120, 50);
-            this.ExcluirProduto.TabIndex = 3;
+            this.ExcluirProduto.TabIndex = 8;
             this.ExcluirProduto.Text = "Excluir";
             this.ExcluirProduto.UseVisualStyleBackColor = false;
             this.ExcluirProduto.Click += new System.EventHandler(this.ExcluirProduto_Click);
@@ -302,10 +302,10 @@
             this.btnAlterarProduto.BackColor = System.Drawing.Color.LightSlateGray;
             this.btnAlterarProduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAlterarProduto.ForeColor = System.Drawing.Color.White;
-            this.btnAlterarProduto.Location = new System.Drawing.Point(332, 397);
+            this.btnAlterarProduto.Location = new System.Drawing.Point(339, 469);
             this.btnAlterarProduto.Name = "btnAlterarProduto";
             this.btnAlterarProduto.Size = new System.Drawing.Size(120, 50);
-            this.btnAlterarProduto.TabIndex = 2;
+            this.btnAlterarProduto.TabIndex = 7;
             this.btnAlterarProduto.Text = "Alterar";
             this.btnAlterarProduto.UseVisualStyleBackColor = false;
             this.btnAlterarProduto.Click += new System.EventHandler(this.btnAlterarProduto_Click);
@@ -315,10 +315,10 @@
             this.btnCadastrarProduto.BackColor = System.Drawing.Color.LightSlateGray;
             this.btnCadastrarProduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastrarProduto.ForeColor = System.Drawing.Color.White;
-            this.btnCadastrarProduto.Location = new System.Drawing.Point(166, 397);
+            this.btnCadastrarProduto.Location = new System.Drawing.Point(173, 469);
             this.btnCadastrarProduto.Name = "btnCadastrarProduto";
             this.btnCadastrarProduto.Size = new System.Drawing.Size(120, 50);
-            this.btnCadastrarProduto.TabIndex = 1;
+            this.btnCadastrarProduto.TabIndex = 6;
             this.btnCadastrarProduto.Text = "Cadastrar";
             this.btnCadastrarProduto.UseVisualStyleBackColor = false;
             this.btnCadastrarProduto.Click += new System.EventHandler(this.btnCadastrarProduto_Click);
@@ -332,8 +332,18 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(903, 33);
+            this.panel1.Size = new System.Drawing.Size(876, 33);
             this.panel1.TabIndex = 87;
+            // 
+            // guna2ControlBox1
+            // 
+            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
+            this.guna2ControlBox1.Location = new System.Drawing.Point(828, 3);
+            this.guna2ControlBox1.Name = "guna2ControlBox1";
+            this.guna2ControlBox1.Size = new System.Drawing.Size(42, 25);
+            this.guna2ControlBox1.TabIndex = 89;
             // 
             // label6
             // 
@@ -346,23 +356,13 @@
             this.label6.TabIndex = 88;
             this.label6.Text = "Sistema: Produtos | Consulta";
             // 
-            // guna2ControlBox1
-            // 
-            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
-            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(855, 3);
-            this.guna2ControlBox1.Name = "guna2ControlBox1";
-            this.guna2ControlBox1.Size = new System.Drawing.Size(42, 25);
-            this.guna2ControlBox1.TabIndex = 89;
-            // 
             // guna2ControlBox2
             // 
             this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
             this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
             this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(807, 4);
+            this.guna2ControlBox2.Location = new System.Drawing.Point(780, 4);
             this.guna2ControlBox2.Name = "guna2ControlBox2";
             this.guna2ControlBox2.Size = new System.Drawing.Size(42, 25);
             this.guna2ControlBox2.TabIndex = 90;
@@ -371,7 +371,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(903, 478);
+            this.ClientSize = new System.Drawing.Size(876, 550);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tabProdutos);
             this.Controls.Add(this.ExcluirProduto);
@@ -379,6 +379,7 @@
             this.Controls.Add(this.btnCadastrarProduto);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmProdutos";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.frmProdutos_Load);
             this.tabProdutos.ResumeLayout(false);

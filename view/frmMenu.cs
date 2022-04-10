@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProjetoDS.dao;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -41,6 +42,16 @@ namespace ProjetoDS.view
             frmProdutos frm = new frmProdutos();
             frm.MdiParent = this;
             frm.Show();
+        }
+
+        private void trocarUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ClienteDAO dao = new ClienteDAO();
+
+            dao.EfetuarLogoff();
+            this.Close();
+
+            
         }
     }
 }

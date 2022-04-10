@@ -29,8 +29,11 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -53,9 +56,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txbPesquisa = new System.Windows.Forms.TextBox();
             this.dgvConsultaCliente = new System.Windows.Forms.DataGridView();
-            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCliente)).BeginInit();
             this.tabMenu.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -73,6 +76,17 @@
             this.panel1.Size = new System.Drawing.Size(873, 33);
             this.panel1.TabIndex = 1;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(4, 5);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(247, 24);
+            this.label6.TabIndex = 44;
+            this.label6.Text = "Sistema: Cadastro | Consulta";
+            // 
             // guna2ControlBox1
             // 
             this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -89,17 +103,7 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.label4);
-            this.tabPage2.Controls.Add(this.label3);
-            this.tabPage2.Controls.Add(this.label2);
-            this.tabPage2.Controls.Add(this.label1);
-            this.tabPage2.Controls.Add(this.Nome);
-            this.tabPage2.Controls.Add(this.cbSexo);
-            this.tabPage2.Controls.Add(this.cbNivel_Acesso);
-            this.tabPage2.Controls.Add(this.txbId);
-            this.tabPage2.Controls.Add(this.txbSenha);
-            this.tabPage2.Controls.Add(this.txbEmail);
-            this.tabPage2.Controls.Add(this.txbNome);
+            this.tabPage2.Controls.Add(this.groupBox2);
             this.tabPage2.Controls.Add(this.btnExcluirCliente);
             this.tabPage2.Controls.Add(this.BtnAlterarCliente);
             this.tabPage2.Controls.Add(this.btnCadastrarCliente);
@@ -112,49 +116,79 @@
             this.tabPage2.Text = "Cadastro de Clientes";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.Controls.Add(this.Nome);
+            this.groupBox2.Controls.Add(this.cbSexo);
+            this.groupBox2.Controls.Add(this.cbNivel_Acesso);
+            this.groupBox2.Controls.Add(this.txbId);
+            this.groupBox2.Controls.Add(this.txbSenha);
+            this.groupBox2.Controls.Add(this.txbEmail);
+            this.groupBox2.Controls.Add(this.txbNome);
+            this.groupBox2.Location = new System.Drawing.Point(6, 6);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(836, 154);
+            this.groupBox2.TabIndex = 33;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "groupBox2";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(80, 36);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(51, 16);
+            this.label7.TabIndex = 56;
+            this.label7.Text = "Código";
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(591, 75);
+            this.label4.Location = new System.Drawing.Point(586, 70);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(38, 16);
-            this.label4.TabIndex = 43;
+            this.label4.TabIndex = 55;
             this.label4.Text = "Sexo";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(30, 115);
+            this.label3.Location = new System.Drawing.Point(25, 112);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(106, 16);
-            this.label3.TabIndex = 42;
+            this.label3.TabIndex = 54;
             this.label3.Text = "Nível de Acesso";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(340, 114);
+            this.label2.Location = new System.Drawing.Point(330, 110);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(46, 16);
-            this.label2.TabIndex = 41;
+            this.label2.TabIndex = 53;
             this.label2.Text = "Senha";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(342, 75);
+            this.label1.Location = new System.Drawing.Point(335, 70);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(41, 16);
-            this.label1.TabIndex = 40;
+            this.label1.TabIndex = 52;
             this.label1.Text = "Email";
             // 
             // Nome
             // 
             this.Nome.AutoSize = true;
-            this.Nome.Location = new System.Drawing.Point(95, 75);
+            this.Nome.Location = new System.Drawing.Point(87, 70);
             this.Nome.Name = "Nome";
             this.Nome.Size = new System.Drawing.Size(44, 16);
-            this.Nome.TabIndex = 39;
+            this.Nome.TabIndex = 51;
             this.Nome.Text = "Nome";
             // 
             // cbSexo
@@ -164,10 +198,10 @@
             this.cbSexo.Items.AddRange(new object[] {
             "M",
             "F"});
-            this.cbSexo.Location = new System.Drawing.Point(635, 67);
+            this.cbSexo.Location = new System.Drawing.Point(628, 62);
             this.cbSexo.Name = "cbSexo";
             this.cbSexo.Size = new System.Drawing.Size(110, 28);
-            this.cbSexo.TabIndex = 38;
+            this.cbSexo.TabIndex = 7;
             // 
             // cbNivel_Acesso
             // 
@@ -176,52 +210,52 @@
             this.cbNivel_Acesso.Items.AddRange(new object[] {
             "admin",
             "usuario"});
-            this.cbNivel_Acesso.Location = new System.Drawing.Point(142, 109);
+            this.cbNivel_Acesso.Location = new System.Drawing.Point(135, 104);
             this.cbNivel_Acesso.Name = "cbNivel_Acesso";
             this.cbNivel_Acesso.Size = new System.Drawing.Size(187, 28);
-            this.cbNivel_Acesso.TabIndex = 37;
+            this.cbNivel_Acesso.TabIndex = 4;
             // 
             // txbId
             // 
             this.txbId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbId.Location = new System.Drawing.Point(142, 35);
+            this.txbId.Location = new System.Drawing.Point(135, 30);
             this.txbId.Name = "txbId";
             this.txbId.Size = new System.Drawing.Size(53, 26);
-            this.txbId.TabIndex = 36;
+            this.txbId.TabIndex = 2;
             // 
             // txbSenha
             // 
             this.txbSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbSenha.Location = new System.Drawing.Point(387, 109);
+            this.txbSenha.Location = new System.Drawing.Point(380, 104);
             this.txbSenha.Name = "txbSenha";
             this.txbSenha.Size = new System.Drawing.Size(187, 26);
-            this.txbSenha.TabIndex = 35;
+            this.txbSenha.TabIndex = 6;
             // 
             // txbEmail
             // 
             this.txbEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbEmail.Location = new System.Drawing.Point(387, 69);
+            this.txbEmail.Location = new System.Drawing.Point(380, 64);
             this.txbEmail.Name = "txbEmail";
             this.txbEmail.Size = new System.Drawing.Size(187, 26);
-            this.txbEmail.TabIndex = 34;
+            this.txbEmail.TabIndex = 5;
             // 
             // txbNome
             // 
             this.txbNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbNome.Location = new System.Drawing.Point(142, 69);
+            this.txbNome.Location = new System.Drawing.Point(135, 64);
             this.txbNome.Name = "txbNome";
             this.txbNome.Size = new System.Drawing.Size(187, 26);
-            this.txbNome.TabIndex = 33;
+            this.txbNome.TabIndex = 3;
             // 
             // btnExcluirCliente
             // 
             this.btnExcluirCliente.BackColor = System.Drawing.Color.SlateGray;
             this.btnExcluirCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExcluirCliente.ForeColor = System.Drawing.Color.White;
-            this.btnExcluirCliente.Location = new System.Drawing.Point(427, 361);
+            this.btnExcluirCliente.Location = new System.Drawing.Point(427, 365);
             this.btnExcluirCliente.Name = "btnExcluirCliente";
             this.btnExcluirCliente.Size = new System.Drawing.Size(120, 40);
-            this.btnExcluirCliente.TabIndex = 32;
+            this.btnExcluirCliente.TabIndex = 11;
             this.btnExcluirCliente.Text = "Excluir";
             this.btnExcluirCliente.UseVisualStyleBackColor = false;
             this.btnExcluirCliente.Click += new System.EventHandler(this.btnExcluirCliente_Click);
@@ -231,10 +265,10 @@
             this.BtnAlterarCliente.BackColor = System.Drawing.Color.SlateGray;
             this.BtnAlterarCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnAlterarCliente.ForeColor = System.Drawing.Color.White;
-            this.BtnAlterarCliente.Location = new System.Drawing.Point(287, 361);
+            this.BtnAlterarCliente.Location = new System.Drawing.Point(287, 365);
             this.BtnAlterarCliente.Name = "BtnAlterarCliente";
             this.BtnAlterarCliente.Size = new System.Drawing.Size(120, 40);
-            this.BtnAlterarCliente.TabIndex = 31;
+            this.BtnAlterarCliente.TabIndex = 10;
             this.BtnAlterarCliente.Text = "Alterar";
             this.BtnAlterarCliente.UseVisualStyleBackColor = false;
             this.BtnAlterarCliente.Click += new System.EventHandler(this.BtnAlterarCliente_Click);
@@ -244,10 +278,10 @@
             this.btnCadastrarCliente.BackColor = System.Drawing.Color.SlateGray;
             this.btnCadastrarCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastrarCliente.ForeColor = System.Drawing.Color.White;
-            this.btnCadastrarCliente.Location = new System.Drawing.Point(131, 361);
+            this.btnCadastrarCliente.Location = new System.Drawing.Point(131, 365);
             this.btnCadastrarCliente.Name = "btnCadastrarCliente";
             this.btnCadastrarCliente.Size = new System.Drawing.Size(120, 40);
-            this.btnCadastrarCliente.TabIndex = 30;
+            this.btnCadastrarCliente.TabIndex = 9;
             this.btnCadastrarCliente.Text = "Cadastrar";
             this.btnCadastrarCliente.UseVisualStyleBackColor = false;
             this.btnCadastrarCliente.Click += new System.EventHandler(this.btnCadastrarCliente_Click);
@@ -255,10 +289,10 @@
             // dgvCliente
             // 
             this.dgvCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCliente.Location = new System.Drawing.Point(53, 152);
+            this.dgvCliente.Location = new System.Drawing.Point(6, 166);
             this.dgvCliente.Name = "dgvCliente";
-            this.dgvCliente.Size = new System.Drawing.Size(735, 189);
-            this.dgvCliente.TabIndex = 29;
+            this.dgvCliente.Size = new System.Drawing.Size(836, 189);
+            this.dgvCliente.TabIndex = 8;
             this.dgvCliente.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCliente_CellClick);
             // 
             // tabMenu
@@ -270,7 +304,7 @@
             this.tabMenu.Name = "tabMenu";
             this.tabMenu.SelectedIndex = 0;
             this.tabMenu.Size = new System.Drawing.Size(856, 455);
-            this.tabMenu.TabIndex = 0;
+            this.tabMenu.TabIndex = 1;
             // 
             // tabPage1
             // 
@@ -304,7 +338,7 @@
             this.btnConsultarClienteNome.Location = new System.Drawing.Point(672, 42);
             this.btnConsultarClienteNome.Name = "btnConsultarClienteNome";
             this.btnConsultarClienteNome.Size = new System.Drawing.Size(120, 40);
-            this.btnConsultarClienteNome.TabIndex = 42;
+            this.btnConsultarClienteNome.TabIndex = 2;
             this.btnConsultarClienteNome.Text = "Buscar";
             this.btnConsultarClienteNome.UseVisualStyleBackColor = false;
             this.btnConsultarClienteNome.Click += new System.EventHandler(this.btnConsultarClienteNome_Click);
@@ -324,7 +358,7 @@
             this.txbPesquisa.Location = new System.Drawing.Point(151, 51);
             this.txbPesquisa.Name = "txbPesquisa";
             this.txbPesquisa.Size = new System.Drawing.Size(490, 26);
-            this.txbPesquisa.TabIndex = 40;
+            this.txbPesquisa.TabIndex = 1;
             // 
             // dgvConsultaCliente
             // 
@@ -335,18 +369,7 @@
             this.dgvConsultaCliente.Name = "dgvConsultaCliente";
             this.dgvConsultaCliente.ReadOnly = true;
             this.dgvConsultaCliente.Size = new System.Drawing.Size(812, 207);
-            this.dgvConsultaCliente.TabIndex = 0;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(4, 5);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(247, 24);
-            this.label6.TabIndex = 44;
-            this.label6.Text = "Sistema: Cadastro | Consulta";
+            this.dgvConsultaCliente.TabIndex = 3;
             // 
             // frmClientes
             // 
@@ -358,13 +381,14 @@
             this.Controls.Add(this.tabMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmClientes";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "frmProdutos";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.frmClientes_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCliente)).EndInit();
             this.tabMenu.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
@@ -386,6 +410,13 @@
         private System.Windows.Forms.Button btnExcluirCliente;
         private System.Windows.Forms.Button BtnAlterarCliente;
         private System.Windows.Forms.Button btnCadastrarCliente;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button btnConsultarClienteNome;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txbPesquisa;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
@@ -397,10 +428,5 @@
         private System.Windows.Forms.TextBox txbSenha;
         private System.Windows.Forms.TextBox txbEmail;
         private System.Windows.Forms.TextBox txbNome;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button btnConsultarClienteNome;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txbPesquisa;
-        private System.Windows.Forms.Label label6;
     }
 }

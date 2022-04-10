@@ -119,3 +119,4 @@ C:\Users\Marcos\Desktop\Projeto\ProjetoDS\bin\Debug\ru\Microsoft.ReportViewer.Wi
 C:\Users\Marcos\Desktop\Projeto\ProjetoDS\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\Marcos\Desktop\Projeto\ProjetoDS\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\Marcos\Desktop\Projeto\ProjetoDS\obj\Debug\ProjetoDS.frmRelatorio.resources
+C:\Users\Marcos\Desktop\Projeto\ProjetoDS\bin\Debug\stdole.dll

@@ -20,7 +20,7 @@ namespace ProjetoDS.view
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-
+           
             string email, senha;
 
             email = txbEmail.Text;
@@ -32,6 +32,9 @@ namespace ProjetoDS.view
             //não funciona no método da classe cliente
             //precisa ser na chamada do método
             this.Hide();
+
         }
+
+       
     }
 }

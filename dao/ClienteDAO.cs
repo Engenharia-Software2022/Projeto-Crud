@@ -191,6 +191,8 @@ namespace ProjetoDS.dao
 
                         frm.Show();
 
+                        
+
                         conexao.Close();
                     }
 
@@ -202,7 +204,7 @@ namespace ProjetoDS.dao
                     conexao.Close();
                 }
 
-
+                
 
             }
             catch (Exception erro)
@@ -242,6 +244,15 @@ namespace ProjetoDS.dao
 
             //Retornar o DataTable com os dados
             return tabelaCliente;
+
+        }
+
+        public void EfetuarLogoff() 
+        {
+            
+            frmLogin frm = new frmLogin();
+            MessageBox.Show("Tem certeza que quer trocar de usuario? " + MessageBoxButtons.OKCancel);
+            frm.Show();
 
         }
     }
