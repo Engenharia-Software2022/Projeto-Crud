@@ -34,6 +34,7 @@
             this.txbSenha = new Guna.UI2.WinForms.Guna2TextBox();
             this.txbEmail = new Guna.UI2.WinForms.Guna2TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnLogin
@@ -135,12 +136,23 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "Bem Vindo!";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(385, 259);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(84, 16);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Versão: 1.0.1";
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(481, 258);
+            this.ClientSize = new System.Drawing.Size(481, 284);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.guna2ControlBox1);
             this.Controls.Add(this.label1);
@@ -164,5 +176,6 @@
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
     }
 }
