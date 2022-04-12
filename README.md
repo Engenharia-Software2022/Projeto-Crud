@@ -13,12 +13,12 @@ operações básicas utilizadas em bases de dados relacionais fornecidas aos uti
 
 ### Desenvolvimento do Sistema:
 
-* IDE - Visual Stúdio Community 2022 (Versão do Net Framework : 4.7.2)
-* Linguagem CSharp
-* Biblioteca Guna2Framework
-* Sistema Operacional Windows 10
-* Banco de Dados MuySql
-* Sql Management Studio V18.11.1
+* IDE - Visual Stúdio Community 2022 (Versão do Net Framework : 4.7.2).
+* Linguagem CSharp.
+* Biblioteca Guna2Framework.
+* Sistema Operacional Windows 10.
+* Banco de Dados MySql Server.
+* Sql Management Studio V18.11.1.
 
 ***
 
