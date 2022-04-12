@@ -51,15 +51,20 @@ Para utilizar o sistema de cadastro o usuário deverá:
 
 ![Tela de Login](https://github.com/Engenharia-Software2022/Projeto-Crud/blob/master/Tela%20de%20Login.PNG)
 
-![Tela de Cadastro](https://github.com/Engenharia-Software2022/Projeto-Crud/blob/master/Tela%20de%20Login.PNG)
+### Tela de Cadastro de Produtos
 ![Tela de Produtos](https://github.com/Engenharia-Software2022/Projeto-Crud/blob/master/Cadastro%20Produto.PNG)
+
+### Tela de Cadastro de Clientes
 ![Tela de Cadastro de Cliente](https://github.com/Engenharia-Software2022/Projeto-Crud/blob/master/Consulta%20Cliente.PNG)
+
+### Tela de Cadastro de Fornecedores
 ![Tela de Cadastro de Fornecedor](https://github.com/Engenharia-Software2022/Projeto-Crud/blob/master/Cadastro%20de%20fornecedor.PNG)
+
+### Tela de Consulta de Produtos
 ![Tela de Cadastro de Produtos](https://github.com/Engenharia-Software2022/Projeto-Crud/blob/master/Consulta%20de%20Produtos.PNG)
 
 
 ***
-### Exemplos de Códigos Utilizados
 
 
 
