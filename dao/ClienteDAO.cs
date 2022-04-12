@@ -203,9 +203,6 @@ namespace ProjetoDS.dao
                     MessageBox.Show("Usuário ou Senha Inválidos");
                     conexao.Close();
                 }
-
-                
-
             }
             catch (Exception erro)
             {
